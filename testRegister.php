@@ -2,11 +2,6 @@
 
 <!--
      Name:         Tyler Maxwell
-    
-	Purpose:	Registration form for an admin   	
-	URL:        acad.kutztown.edu/~tmaxw449/Project/Phase3/AdminReg.php
-         Course:      CSC242
-     Due Date:     5/2/2016
 -->
 
 <html>
