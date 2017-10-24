@@ -7,13 +7,13 @@
 <html>
    <head>
    
-		<title>   AdminReg.html       </title>
+		<title>   testRegister.php       </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type = "text/css" href = "Project.css"/>
 	</head>
 	<body>
 		<center><img src = "../../ku.jpg"></center>
-		<h1 style = "text-align:center"> Admin Register </h1><br>
+		<h1 style = "text-align:center"> Register </h1><br>
 		<hr>
 
 		<form align="center" action="Cred.php" method="POST">
