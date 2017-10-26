@@ -1,12 +1,14 @@
+<?php
+/*
 <!--
 <--------------------------------------------\
 < Author: Tyler Stoney                       \
 < Date of Creation: April 26, 2017           \
 < Purpose: Let registered user log in.       \
-<          <FRONTEND>                \
+<          <FRONTEND>                        \
 <--------------------------------------------\
 -->
-<?php
+*/
 
 require_once 'dbconfig.php';
 
@@ -31,7 +33,7 @@ if($count[0] > 3){
 
 if($user->is_loggedin()!="")
 {
-    $user->redirect('index.php'); //Hey look
+    $user->redirect('index.php');
 }
 
 //Once the login button has been pressed
@@ -109,23 +111,23 @@ if(isset($_POST['btn-login']))
             <h2>Sign in.</h2><hr />
             <?php if(isset($error)) {echo $error;} ?>
             <div class="form-group">
-                <input type="text"  name="txt_uname_email" placeholder="Username or E mail ID" required />
+                <input type="text" name="txt_uname_email" placeholder="Username or E mail ID" required />
             </div>
             <div class="form-group">
                 <input type="password" name="txt_password" placeholder="Your Password" required />
             </div>
             <div class="clearfix"></div><hr />
             <div class="form-group">
-            <?php
+                <?php
                 if($blocked){//If user is blocked from overextending their ability to fail to log in, disable the
-                             // log-in button totally.  Not the solution, just makes things look nice.
+                    // log-in button totally.  Not the solution, just makes things look nice.
                     echo "<button type=\"submit\" disabled name=\"btn-login\" class=\"btn btn-block btn-primary\">";
                 }
                 //else just print out the regular damn button
                 else
-                    echo "<button type=\"submit\" name=\"btn-login\" class=\"btn btn-block btn-primary\">";
-            ?>
-                    <i class="glyphicon glyphicon-log-in"></i> SIGN IN
+                    echo "<button type=\"submit\" name=\"btn-login\">";
+                ?>
+                <i class="glyphicon glyphicon-log-in"></i> SIGN IN
                 </button>
             </div>
             <br />
